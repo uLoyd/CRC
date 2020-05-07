@@ -19,7 +19,7 @@ let crcObj = {
         crc = (crc >>> 8) ^ this.arr[(crc ^ str.charCodeAt(i)) & 0xff];
 
     crc = crc ^ (-1);
-    return (crc >>> 0).toString(16);
+    return (crc >>> 0).toString(16); //CRC in hexadecimal form
   }
 }
 //modified from http://crc32.nichabi.com/javascript-function.php
@@ -80,11 +80,11 @@ let dataObj = {
 
     //----------Prepare data to make file--------------
 
-    //Create the text file as a Blob:
+    //--Create the text file as a Blob:
   	let blob = new Blob([content],{type: extensionData.type()});
 
-  	//Download the file:
-  	download(blob,"crc." + extensionData.ext); //e is file extension
+  	//--Download the file:
+  	download(blob,"crc." + extensionData.ext); //file name and extension
 
   	function download(blob,name) {
   		let url = URL.createObjectURL(blob),
@@ -177,7 +177,7 @@ let addToDom = {
 
 
 $(document).ready(function(){
-  //CRC calculate
+  //File upload to calculate CRC
   document.getElementById('inputfile').onchange = function (evt) {
     var f = evt.target.files[0];
 
