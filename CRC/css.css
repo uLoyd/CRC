@@ -1,0 +1,49 @@
+#remade{
+  float: right;
+  width: 60%;
+}
+
+.remadeplace{
+  float: left;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.remadeinfo{
+  border: 1px solid black;
+  width: 30%;
+  position: relative;
+  left: 35%;
+  border-radius: 25px;
+}
+
+.area{
+  width: 100%;
+  white-space: pre-line;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.OK{
+  background-color: green;
+}
+
+.INVALID{
+  background-color: red;
+}
+
+#content{
+  background-color: #EF9F91;
+  width: 60%;
+}
+#remadeinfo{
+  background-color: #579FE6;
+}
+#calculationLog{
+  background-color: #6FC5A2;
+  width: 38%;
+  border-left-style: none;
+}
+#loginfo{
+  background-color: #CED87B;
+}

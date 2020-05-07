@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css.css">
+    <script src="jquery-3.2.1.js"></script>
+    <script src="crc_02.js"></script>
+
+    <title>CRC</title>
+  </head>
+  <body>
+    <p class = "fileInfo">Select output file type</p>
+    <select id="ext">
+      <option value="txt" selected="selected">Text file</option>
+      <option value="json">JSON file</option>
+    </select>
+    </br>
+    </br>
+    <input id="inputfile" type="file">
+    <!--<button onclick="getFile()">Działaj</button>-->
+    </br>
+    </br>
+    <p class = "fileInfo">Select file to check CRC32</p>
+    <input id="checkfile" type="file">
+
+    <div id="remade">
+      <div id="content" class="remadeplace">
+        <p id="remadeinfo" class="remadeinfo">Remade file content</p>
+        <div id="txt" class="area"></div>
+      </div>
+      <div id="calculationLog" class="remadeplace">
+        <p id="loginfo" class="remadeinfo">Check log</p>
+        <div id="log" class="area"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
