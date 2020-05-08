@@ -108,7 +108,7 @@ let dataObj = {
 
 }
 
-
+//----------------DOM elements for displaying checked data--------------------
 let addToDom = {
   it: 0,
   addElem: function(x){
@@ -174,7 +174,7 @@ let addToDom = {
     $("#txt").text($("#txt").text() + x);
   }
 }
-
+//----------------DOM elements for displaying checked data--------------------
 
 $(document).ready(function(){
   //File upload to calculate CRC
