@@ -31,7 +31,7 @@ let readFile = (source, callback) => {
         callback(content.target.result, file.type);
       }
       read.onerror = () => {
-        console.log(reader.error);
+        console.log(read.error);
         callback(false);
       };
       read.readAsText(file);
